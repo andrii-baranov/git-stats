@@ -3,3 +3,5 @@ GitStats/obj/*
 GitStats.Core/bin/*
 packages/*/*
 GitStats.Core/obj/*
+*/obj/*
+*/bin/*
