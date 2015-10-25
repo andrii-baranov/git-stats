@@ -1,0 +1,5 @@
+GitStats/bin/*
+GitStats/obj/*
+GitStats.Core/bin/*
+packages/*/*
+GitStats.Core/obj/*
