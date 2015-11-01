@@ -111,11 +111,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\repo-details-controller.js" />
+    <Content Include="app\controllers\user-controller.js" />
     <Content Include="app\services\repository-service.js" />
     <Content Include="app\templates\home.html" />
     <Content Include="app\app.js" />
     <Content Include="app\controllers\repo-controller.js" />
+    <Content Include="app\templates\repo\repo-details.html" />
     <Content Include="app\templates\repo\repo-list.html" />
+    <Content Include="app\templates\users.html" />
     <Content Include="Content\ui-grid.css" />
     <Content Include="Content\ui-grid.min.css" />
     <Content Include="Content\ui-grid.svg" />
