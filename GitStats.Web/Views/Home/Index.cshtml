@@ -1,8 +1,27 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;//"~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<html ng-app="myDemoApp">
+<head>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-ui-router.js"></script>
+    <script src="~/Scripts/ui-grid.js"></script>
+    <link href="~/Content/ui-grid.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <script src="~/app/app.js"></script>
+    <script src="~/app/controllers/home-controller.js"></script>
+    <script src="~/app/services/repository-service.js"></script>
+    <script src="~/app/controllers/repo-controller.js"></script>
+</head>
+<body>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#repositories">Repositories</a>
+    </div><div ui-view=""></div>
+</body>
+</html>
 
