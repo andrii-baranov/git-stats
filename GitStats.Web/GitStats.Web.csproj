@@ -173,11 +173,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Repo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GitStats.Core\GitStats.Core.csproj">
+      <Project>{d3c838c2-93c1-4f00-88ef-91082e9cb7a5}</Project>
+      <Name>GitStats.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GitStats.Domain.Models\GitStats.Domain.Models.csproj">
+      <Project>{0c26ff79-6a9b-4222-9b57-017901e8179f}</Project>
+      <Name>GitStats.Domain.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
