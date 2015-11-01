@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStats.Web", "GitStats.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStats.Web.Tests", "GitStats.Web.Tests\GitStats.Web.Tests.csproj", "{ED45CF53-A09F-45E8-9208-6A8E0B079027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStats.Domain.Models", "GitStats.Domain.Models\GitStats.Domain.Models.csproj", "{0C26FF79-6A9B-4222-9B57-017901E8179F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ED45CF53-A09F-45E8-9208-6A8E0B079027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED45CF53-A09F-45E8-9208-6A8E0B079027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED45CF53-A09F-45E8-9208-6A8E0B079027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,33 +1,36 @@
-﻿using GitStats.Web.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using GitStats.Domain.Models;
+using GitStats.Core.Services;
 
 namespace GitStats.Web.Controllers
 {
     public class RepoController : ApiController
     {
+        private IRepositoryService _service;
+
+        public RepoController()
+        {
+            // todo use IOC for this
+            _service = new RepositoryService();
+        }
+        
         [HttpGet]
         [Route("api/repo/list")]
-        public List<Repo> Get()
+        public List<GitStats.Domain.Models.Repository> Get()
         {
-            return new List<Repo>()
-            {
-                new Repo {Name = "repo name", Description = "Repo desc"},
-                new Repo {Name = "repo name2", Description = "Repo desc 2"},
-                new Repo {Name = "repo name3", Description = "Repo desc 3"},
-                new Repo {Name = "repo name4", Description = "Repo desc 4"}
-            };
+           return _service.GetRandomRepositories();
         }
 
         [HttpGet]
         [Route("api/repo/{id:int}")]
-        public Repo Get(int id)
+        public Repository Get(int id)
         {
-            return new Repo { Name = "repo name", Description = "Repo desc" };
+           return _service.GetRepoDetails(id.ToString());
         }
     }
 }
