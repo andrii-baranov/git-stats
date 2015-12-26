@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStats.Web.Tests", "GitSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStats.Domain.Models", "GitStats.Domain.Models\GitStats.Domain.Models.csproj", "{0C26FF79-6A9B-4222-9B57-017901E8179F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStats.Data", "GitStats.Data\GitStats.Data.csproj", "{B8C4ACDA-EBF5-475A-BCCC-C9924B6350F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C26FF79-6A9B-4222-9B57-017901E8179F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C4ACDA-EBF5-475A-BCCC-C9924B6350F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C4ACDA-EBF5-475A-BCCC-C9924B6350F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C4ACDA-EBF5-475A-BCCC-C9924B6350F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C4ACDA-EBF5-475A-BCCC-C9924B6350F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

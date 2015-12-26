@@ -64,6 +64,14 @@
       <Project>{d3c838c2-93c1-4f00-88ef-91082e9cb7a5}</Project>
       <Name>GitStats.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GitStats.Data\GitStats.Data.csproj">
+      <Project>{b8c4acda-ebf5-475a-bccc-c9924b6350f5}</Project>
+      <Name>GitStats.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GitStats.Domain.Models\GitStats.Domain.Models.csproj">
+      <Project>{0c26ff79-6a9b-4222-9b57-017901e8179f}</Project>
+      <Name>GitStats.Domain.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
